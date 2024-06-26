@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "lelu"
+version = "0.1.0"
+description = ""
+authors = ["kuznetsow42 <kuznetsow42@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "^5.0.6"
+python-dotenv = "^1.0.1"
+psycopg = {extras = ["binary"], version = "^3.1.19"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
