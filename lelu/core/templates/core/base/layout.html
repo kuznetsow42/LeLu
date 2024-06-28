@@ -4,11 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LeLu</title>
+    <title>{% block title %} LeLu {% endblock %}</title>
     <link rel="icon" type="image/x-icon" href="{% static 'core/icons/favicon.png' %}" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.8/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    {% block content %}
-    {% endblock %}
+<body class="h-screen flex flex-col justify-between items-center">
+    {% include 'core/base/navbar.html' %}
+        {% block content %}
+        {% endblock %}
+    {% include 'core/base/footer.html' %}
 </body>
 </html>
